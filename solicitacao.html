@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Declaração de Matrícula</h1>
+    <p>Nova solicitação</p>
+</header>
+
+<main>
+
+    <div class="card">
+
+        <h2>Preencha os dados</h2>
+
+        <p>
+            Confira as informações antes de enviar sua solicitação.
+        </p>
+
+        <form action="processando.html">
+
+            <label for="nome">
+                Nome completo
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <label for="matricula">
+                Número da matrícula
+            </label>
+
+            <input
+                type="text"
+                id="matricula"
+                placeholder="Digite sua matrícula"
+                required
+            >
+
+            <label for="finalidade">
+                Finalidade do documento
+            </label>
+
+            <select id="finalidade" required>
+
+                <option value="">
+                    Selecione
+                </option>
+
+                <option>
+                    Estágio
+                </option>
+
+                <option>
+                    Trabalho
+                </option>
+
+                <option>
+                    Outro
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <button class="btn" type="submit">
+                Enviar solicitação
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+</body>
+</html>
